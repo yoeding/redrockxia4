@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+ <title></title>
+ <link rel="stylesheet" type="text/css">
+ <script>
+
+
+
+
+function deepCopy(m,n){
+    for(let i in n){
+        if(typeof n[i] === "object"){
+            m[i] = {};
+            deepCopy(m[i],n[i])
+        }else{
+            m[i] = n[i]
+        }
+    }
+    
+}
+let b = {a:1,c:2}
+let a = {}
+deepCopy(a,b)
+console.log(b)
+    
+
+
+ 
+ 
+ 
+ 
+ 
+ </script>
+</head>
+<body>
+    
+
+
+
+</body>
+</html>
